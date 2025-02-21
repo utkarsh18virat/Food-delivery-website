@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        
+        
+        <div class="logo-nav-container">
+            <div class="logo">
+                <img src="logo.webp" alt="Company Logo">
+            </div>
+            <nav class="nav">
+                <button class="nav-btn">Home</button>
+                <button class="nav-btn">About Us</button>
+                <button class="nav-btn">Menu</button>
+                <button class="nav-btn">Our Stores</button>
+                <button class="nav-btn request-dish-btn">Request Dish</button>
+            </nav>
+        </div>
+        <div id="request-dish-modal" class="modal">
+            <div class="modal-content">
+                <h2 class="modal-title">Request a Dish</h2>
+        
+               
+                <label for="dish-name" class="modal-label">Name:</label>
+                <input type="text" id="dish-name" class="modal-input" placeholder="Enter your name">
+        
+               
+                <label for="dish-image" class="modal-label">Upload an Image:</label>
+                <input type="text" id="dish-image" class="modal-input" placeholder="Enter the URL of the image">
+        
+               
+                <div class="modal-buttons">
+                    <button class="cancel-btn">Cancel</button>
+                    <button class="submit-request">Submit Request</button>
+                </div>
+            </div>
+        </div>
+        <div class="icons">
+            <button class="icon-btn">
+                <img src="location.webp" alt="Location" class="icon-img">
+            </button>
+            <button class="icon-btn cart-icon">
+                <img src="cart.webp" alt="Cart" class="icon-img">
+            </button>
+        </div>
+        
+<div id="cart-modal" class="modal">
+    <div class="modal-content">
+        <img src="cart1.png" alt="Empty Cart" class="cart-image"> 
+        <h2 class="cart-title">Cart is Empty</h2>
+        <p class="cart-message">Add some items to the cart to checkout</p>
+        <button class="back-to-menu">Back to Menu</button>
+    </div>
+</div>
+
+
+   
+
+    </header>
+    <header class="header1">
+    <div class="banner">
+        <img src="banner.jpg" alt="Banner Image" class="banner-img">
+        <div class="banner-text">Order food online from Utkarsh Kitchen!</div>
+        <div class="offer-strip">
+            <p class="offer-text">15% off on the order above Rs.399</p>
+        </div>
+        
+        
+        <section class="mood-section">
+            <h2 class="mood-text">What's your mood?</h2>
+        </section>
+        <section class="mood-options">
+            <button class="mood-btn">
+                <img src="food/f1.jpeg" alt="Pizza">
+                <p>Pizza</p>
+            </button>
+            <button class="mood-btn">
+                <img src="food/f2.jpeg" alt="Dosa">
+                <p>Dosa</p>
+            </button>
+            <button class="mood-btn">
+                <img src="food/f3.jpeg" alt="Burger">
+                <p>Burger</p>
+            </button>
+            <button class="mood-btn">
+                <img src="food/f4.jpeg" alt="Pasta">
+                <p>Pasta</p>
+            </button>
+            <button class="mood-btn">
+                <img src="food/f5.jpeg" alt="Noodles">
+                <p>Noodles</p>
+            </button>
+            <button class="mood-btn">
+                <img src="food/f6.jpeg" alt="Pav Bhaji">
+                <p>Pav Bhaji</p>
+            </button>
+            <button class="mood-btn">
+                <img src="food/f7.jpeg" alt="Momos">
+                <p>Momos</p>
+            </button>
+            <button class="mood-btn">
+                <img src="food/f8.jpeg" alt="Biryani">
+                <p>Biryani</p>
+            </button>
+            <button class="mood-btn">
+                <img src ="food/f9.jpeg" alt="kebabs">
+                <p>Kebabs</p>
+            </button>
+        </section>
+        <h2 class="popular-items-heading">Popular Items</h2>
+        <div class="carousel-container">
+            <button class="carousel-arrow left-arrow">&lt;</button>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <span class="item-price">₹399</span>
+                    <span class="item-rating">⭐ 4.5</span>
+                    <span class="delivery-time">⏳ 40m</span>
+                    <img src="food/f13.jpeg" alt="Item 1"><p>Rajasthani Thali</p>
+                    <div class="cart-controls">
+                        <button class="minus-btn">-</button>
+                        <span class="cart-count">0</span>
+                        <button class="plus-btn">+</button>
+                    </div></div>
+                <div class="carousel-item">
+                    <span class="item-price">₹299</span>
+                    <span class="item-rating">⭐ 4.0</span>
+                    <span class="delivery-time">⏳ 35m</span>
+                    <img src="food/f12.jpeg" alt="Item 2"><p>Palak Paneer</p>
+                    <div class="cart-controls">
+                        <button class="minus-btn">-</button>
+                        <span class="cart-count">0</span>
+                        <button class="plus-btn">+</button>
+                    </div></div>
+                <div class="carousel-item active">
+                    <span class="item-price">₹399</span>
+                    <span class="item-rating">⭐ 4.3</span>
+                    <span class="delivery-time">⏳ 25m</span>
+                    <img src="food/f11.jpeg" alt="Item 3"><p>Chicken Biryani</p>
+                    <div class="cart-controls">
+                        <button class="minus-btn">-</button>
+                        <span class="cart-count">0</span>
+                        <button class="plus-btn">+</button>
+                    </div></div>
+                <div class="carousel-item">
+                    <span class="item-price">₹299</span>
+                    <span class="item-rating">⭐ 4.1</span>
+                    <span class="delivery-time">⏳ 45m</span>
+                    <img src="food/f10.jpeg" alt="Item 4"><p>Kadhai Paneer</p>
+                    <div class="cart-controls">
+                        <button class="minus-btn">-</button>
+                        <span class="cart-count">0</span>
+                        <button class="plus-btn">+</button>
+                    </div></div>
+                <div class="carousel-item">
+                    <span class="item-price">₹199</span>
+                    <span class="item-rating">⭐ 4.1</span>
+                    <span class="delivery-time">⏳ 45m</span>
+                    <img src="food/f1.jpeg" alt="Item 5"><p>Paneer Pizza</p>
+                    <div class="cart-controls">
+                        <button class="minus-btn">-</button>
+                        <span class="cart-count">0</span>
+                        <button class="plus-btn">+</button>
+                    </div></div>
+                
+            
+                
+            </div>
+            <button class="carousel-arrow right-arrow">&gt;</button>
+        </div>
+        
+        <div class="green-strip">
+            <div class="video-container">
+                <video id="strip-video" class="strip-video" autoplay muted loop>
+                    <source src="v1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img id="play-icon" class="play-icon" src="play.png" alt="Play Icon">
+            </div>
+        </div>
+        
+        
+
+
+        
+    </div>
+</header>
+    
+    <script src="script.js"></script>
+
+
+</body>
+</html>
